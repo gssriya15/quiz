@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Quiz</title>
+<script type="text/javascript">
+function checkAnswer() {
+    var ans = document.getElementById("answer").value.toUpperCase();
+
+    if (ans === "WAD") {
+        document.getElementById("result").innerHTML = "Correct!";
+    } else {
+        document.getElementById("result").innerHTML =
+        "Incorrect. The correct answer is WAD.";
+    }
+}
+</script>
+</head>
+
+<body>
+<h2>Quiz</h2>
+<p>What is the short form of 'Web Application Development'?</p>
+
+<input type="text" id="answer">
+<input type="button" value="Submit" onclick="checkAnswer()">
+
+<p id="result"></p>
+</body>
+</html>
